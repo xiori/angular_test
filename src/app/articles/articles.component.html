@@ -1,0 +1,5 @@
+<p *ngIf="isFetching">Loading...</p>
+<ul *ngIf="!isFetching">
+    <li *ngFor="let article of articleList" (click)="onDeleteArticle(article)"> 
+       Mon article {{article.title}} {{article.content}}</li>
+</ul>
